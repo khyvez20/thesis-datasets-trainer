@@ -1,0 +1,37 @@
+2026-06-25 19:10:52,297 - INFO - parser.py:158 - Translation started on ONNX model stage1_okra
+2026-06-25 19:10:52,360 - INFO - parser.py:193 - Restored ONNX model stage1_okra (completion time: 00:00:00.06)
+2026-06-25 19:10:52,568 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.27)
+2026-06-25 19:10:53,703 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage1_okra/input_layer1'.
+2026-06-25 19:10:53,703 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2026-06-25 19:10:53,826 - INFO - parser.py:288 - Translation completed on ONNX model stage1_okra (completion time: 00:00:01.53)
+2026-06-25 19:10:55,038 - INFO - client_runner.py:504 - Loading model script commands to stage1_okra from string
+2026-06-25 19:12:47,901 - INFO - parser.py:158 - Translation started on ONNX model stage1_okra
+2026-06-25 19:12:47,963 - INFO - parser.py:193 - Restored ONNX model stage1_okra (completion time: 00:00:00.06)
+2026-06-25 19:12:48,170 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.27)
+2026-06-25 19:12:49,125 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage1_okra/input_layer1'.
+2026-06-25 19:12:49,125 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2026-06-25 19:12:49,211 - INFO - parser.py:288 - Translation completed on ONNX model stage1_okra (completion time: 00:00:01.31)
+2026-06-25 19:12:50,086 - INFO - client_runner.py:504 - Loading model script commands to stage1_okra from string
+2026-06-25 19:13:01,188 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-25 19:13:01,594 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-25 19:13:01,761 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-25 19:13:01,761 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-25 19:13:01,763 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-25 19:13:07,765 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-25 19:13:07,885 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-25 19:13:08,329 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.44)
+2026-06-25 19:13:08,486 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-25 19:13:08,875 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-25 19:13:08,880 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-25 19:13:49,774 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:40.89)
+2026-06-25 19:13:52,587 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-25 19:13:52,588 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-25 19:13:52,589 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-25 19:13:52,589 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-25 19:13:52,590 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-25 19:14:05,067 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-25 19:14:05,070 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-25 19:14:05,082 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-25 19:14:05,087 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-25 19:14:13,911 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-25 19:14:25,803 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
