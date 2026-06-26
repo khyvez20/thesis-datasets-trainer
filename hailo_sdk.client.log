@@ -35,3 +35,100 @@
 2026-06-25 19:14:05,087 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
 2026-06-25 19:14:13,911 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
 2026-06-25 19:14:25,803 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-06-26 10:01:02,309 - INFO - parser.py:158 - Translation started on ONNX model stage1_tomato
+2026-06-26 10:01:02,450 - INFO - parser.py:193 - Restored ONNX model stage1_tomato (completion time: 00:00:00.14)
+2026-06-26 10:01:02,721 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.41)
+2026-06-26 10:01:03,949 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage1_tomato/input_layer1'.
+2026-06-26 10:01:03,950 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2026-06-26 10:01:04,064 - INFO - parser.py:288 - Translation completed on ONNX model stage1_tomato (completion time: 00:00:01.76)
+2026-06-26 10:01:05,242 - INFO - client_runner.py:504 - Loading model script commands to stage1_tomato from string
+2026-06-26 10:01:08,010 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-26 10:01:08,542 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-26 10:01:08,740 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-26 10:01:08,741 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-26 10:01:08,742 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-26 10:01:13,283 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-26 10:01:13,439 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-26 10:01:14,031 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.59)
+2026-06-26 10:01:14,234 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-26 10:01:15,030 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-26 10:01:15,039 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-26 10:01:59,954 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:44.91)
+2026-06-26 10:02:01,458 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-26 10:02:01,459 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-26 10:02:01,460 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-26 10:02:01,460 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-26 10:02:01,461 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-26 10:02:14,849 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-26 10:02:14,852 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-26 10:02:14,864 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-26 10:02:14,871 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-26 10:02:24,836 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-26 10:02:33,920 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-06-26 12:24:52,625 - INFO - parser.py:158 - Translation started on ONNX model stage2_okra_specialist
+2026-06-26 12:24:52,690 - INFO - parser.py:193 - Restored ONNX model stage2_okra_specialist (completion time: 00:00:00.07)
+2026-06-26 12:24:52,788 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.16)
+2026-06-26 12:24:52,962 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_okra_specialist/input_layer1'.
+2026-06-26 12:24:52,962 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-26 12:24:53,146 - INFO - parser.py:288 - Translation completed on ONNX model stage2_okra_specialist (completion time: 00:00:00.52)
+2026-06-26 12:24:53,732 - INFO - client_runner.py:504 - Loading model script commands to stage2_okra_specialist from string
+2026-06-26 12:25:04,720 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-26 12:25:04,887 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-26 12:25:05,015 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-26 12:25:05,016 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-26 12:25:05,017 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-26 12:25:06,570 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-26 12:25:06,631 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-26 12:25:06,863 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.23)
+2026-06-26 12:25:06,946 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-26 12:25:07,146 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-26 12:25:07,152 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-26 12:25:19,144 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:11.99)
+2026-06-26 12:25:19,657 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-26 12:25:19,658 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-26 12:25:19,659 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-26 12:25:19,659 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-26 12:25:19,659 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-26 12:25:26,745 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-26 12:25:26,747 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-26 12:25:26,753 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-26 12:25:26,756 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-26 12:25:31,617 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-26 12:25:36,438 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-06-26 12:59:13,976 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-26 12:59:14,039 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.06)
+2026-06-26 12:59:14,140 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.16)
+2026-06-26 12:59:14,314 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-26 12:59:14,315 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-26 12:59:14,498 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.52)
+2026-06-26 12:59:15,087 - INFO - client_runner.py:504 - Loading model script commands to stage2_eggplant_specialist from string
+2026-06-26 12:59:46,477 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-26 12:59:46,522 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.05)
+2026-06-26 12:59:46,622 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.15)
+2026-06-26 12:59:46,797 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-26 12:59:46,797 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-26 12:59:46,980 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.50)
+2026-06-26 12:59:47,557 - INFO - client_runner.py:504 - Loading model script commands to stage2_eggplant_specialist from string
+2026-06-26 12:59:57,812 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-26 12:59:57,984 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-26 12:59:58,106 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-26 12:59:58,106 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-26 12:59:58,107 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-26 12:59:59,651 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-26 12:59:59,711 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-26 12:59:59,938 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.23)
+2026-06-26 13:00:00,027 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-26 13:00:00,228 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-26 13:00:00,233 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-26 13:00:12,301 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:12.07)
+2026-06-26 13:00:12,824 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-26 13:00:12,825 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-26 13:00:12,825 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-26 13:00:12,826 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-26 13:00:12,826 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-26 13:00:19,452 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-26 13:00:19,454 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-26 13:00:19,460 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-26 13:00:19,465 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-26 13:00:24,579 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-26 13:00:29,096 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done

@@ -160,7 +160,7 @@ if __name__ == "__main__":
         description="Compile a Stage-2 classifier ONNX to Hailo-8L HEF"
     )
     ap.add_argument("--crop",  required=True,
-                    choices=["eggplant", "rice", "corn", "tomato"],
+                    choices=["eggplant", "rice", "corn", "tomato", "okra"],
                     help="Crop name")
     ap.add_argument("--onnx",  required=True,
                     help="Path to best.onnx from train_stage2_percrop.py")
