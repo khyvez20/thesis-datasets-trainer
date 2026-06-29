@@ -31,6 +31,7 @@ caused a calibration/runtime mismatch: the DFC calibrated quantization params fo
 """
 
 import os
+import tempfile
 import cv2
 import numpy as np
 import argparse
@@ -147,15 +148,22 @@ def compile_classifier(crop: str, onnx_path: str, calib_dir: str) -> str:
         net_input_shapes={"images": [1, 3, 224, 224]},
     )
 
-    # Build .alls script
+    # Build .alls script and write to a temp file.
+    # load_model_script() requires a file path, not an inline string.
     alls  = f"model_optimization_config(calibration, batch_size={CALIB_BATCH_SIZE})\n"
     alls += "performance_param(compiler_optimization_level=2)\n"
     if BAKE_NORMALIZATION:
-        # Bake /255:  output = (input - 0) / 255  →  [0-255] uint8 in, [0-1] float to model
         alls += "normalization([0,0,0],[255,255,255])\n"
         print("  baked normalization: normalization([0,0,0],[255,255,255])")
 
-    runner.load_model_script(alls)
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.alls', delete=False) as tf:
+        tf.write(alls)
+        alls_path = tf.name
+
+    try:
+        runner.load_model_script(alls_path)
+    finally:
+        os.unlink(alls_path)
 
     # Load calibration data — uint8 [0-255] to match the baked normalization
     calib_data = load_calibration_dataset(calib_dir)
