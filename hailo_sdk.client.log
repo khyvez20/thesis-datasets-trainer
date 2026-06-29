@@ -350,3 +350,33 @@ Since the neural core works in 8-bit (between 0 to 255), a quantization will occ
 Add a normalization layer to the model to offload the normalization to the neural core.
 Refer to the user guide Hailo Dataflow Compiler user guide / Model Optimization / Optimization Related Model Script Commands / model_modification_commands / normalization for details.
 2026-06-29 17:47:06,336 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-06-29 23:28:58,312 - INFO - parser.py:158 - Translation started on ONNX model stage1_tomato
+2026-06-29 23:28:58,460 - INFO - parser.py:193 - Restored ONNX model stage1_tomato (completion time: 00:00:00.15)
+2026-06-29 23:28:59,056 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.74)
+2026-06-29 23:29:01,968 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage1_tomato/input_layer1'.
+2026-06-29 23:29:01,969 - INFO - parser.py:367 - End nodes mapped from original model: '/model.22/cv2.0/cv2.0.2/Conv', '/model.22/cv3.0/cv3.0.2/Conv', '/model.22/cv2.1/cv2.1.2/Conv', '/model.22/cv3.1/cv3.1.2/Conv', '/model.22/cv2.2/cv2.2.2/Conv', '/model.22/cv3.2/cv3.2.2/Conv'.
+2026-06-29 23:29:02,247 - INFO - parser.py:288 - Translation completed on ONNX model stage1_tomato (completion time: 00:00:03.94)
+2026-06-29 23:29:06,062 - INFO - client_runner.py:504 - Loading model script commands to stage1_tomato from string
+2026-06-29 23:29:10,643 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-29 23:29:11,544 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-29 23:29:11,851 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-29 23:29:11,851 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-29 23:29:11,853 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-29 23:29:17,732 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-29 23:29:17,896 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-29 23:29:18,396 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.50)
+2026-06-29 23:29:18,569 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-29 23:29:19,172 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-29 23:29:19,180 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-29 23:30:50,597 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:01:31.42)
+2026-06-29 23:30:55,525 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-29 23:30:55,529 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-29 23:30:55,541 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-29 23:30:55,541 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-29 23:30:55,542 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-29 23:31:31,878 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-29 23:31:31,884 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-29 23:31:31,921 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-29 23:31:31,934 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-29 23:31:57,832 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-29 23:32:17,468 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done

@@ -29,3 +29,4 @@
 2026-06-29 17:44:29,956 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
 2026-06-29 17:46:06,143 - INFO - conv_stripped_op.py:633 - No shifts available for layer stage2_tomato_specialist/fc1/conv_op, using max shift instead. delta=0.6645
 2026-06-29 17:46:06,252 - INFO - conv_stripped_op.py:633 - No shifts available for layer stage2_tomato_specialist/fc1/conv_op, using max shift instead. delta=0.3322
+2026-06-29 23:28:37,915 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
