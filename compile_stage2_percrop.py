@@ -23,6 +23,7 @@ caused a calibration/runtime mismatch: the DFC calibrated quantization params fo
 [0-255] but inference sent [0-1], collapsing all predictions to one class at 100%.
 """
 import os
+import tempfile
 import cv2
 import numpy as np
 import argparse
@@ -113,7 +114,14 @@ def compile_classifier(crop: str, onnx_path: str, calib_dir: str):
         net_input_shapes=NET_INPUT_SHAPES,
     )
     if BAKE_NORMALIZATION:
-        runner.load_model_script("normalization([0,0,0],[255,255,255])\n")
+        # load_model_script() requires a file path — write to a temp file
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.alls', delete=False) as tf:
+            tf.write("normalization([0,0,0],[255,255,255])\n")
+            alls_path = tf.name
+        try:
+            runner.load_model_script(alls_path)
+        finally:
+            os.unlink(alls_path)
         print("  baked normalization: normalization([0,0,0],[255,255,255])")
     calib_data = load_calibration_dataset(calib_dir)
     print("  full-precision pass …")
