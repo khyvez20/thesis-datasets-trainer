@@ -132,3 +132,33 @@
 2026-06-26 13:00:19,465 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
 2026-06-26 13:00:24,579 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
 2026-06-26 13:00:29,096 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-06-29 12:41:32,063 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 12:41:32,233 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.17)
+2026-06-29 12:41:32,621 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.56)
+2026-06-29 12:41:33,003 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 12:41:33,005 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 12:41:36,231 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:04.17)
+2026-06-29 12:41:37,976 - INFO - client_runner.py:504 - Loading model script commands to stage2_eggplant_specialist from string
+2026-06-29 12:42:12,856 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-29 12:42:13,188 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-29 12:42:13,680 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-29 12:42:13,681 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-29 12:42:13,683 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-29 12:42:16,766 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-29 12:42:16,896 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-29 12:42:17,398 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.50)
+2026-06-29 12:42:17,579 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-29 12:42:17,965 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-29 12:42:17,974 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-29 12:42:39,904 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:21.93)
+2026-06-29 12:42:41,319 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-29 12:42:41,321 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-29 12:42:41,323 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-29 12:42:41,324 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-29 12:42:41,324 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-29 12:42:57,876 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-29 12:42:57,879 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-29 12:42:57,893 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-29 12:42:57,901 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-29 12:43:07,598 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-29 12:43:16,091 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done

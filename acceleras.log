@@ -7,3 +7,5 @@
 2026-06-26 12:59:41,746 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
 2026-06-26 13:00:14,316 - INFO - conv_stripped_op.py:633 - No shifts available for layer stage2_eggplant_specialist/fc1/conv_op, using max shift instead. delta=0.2057
 2026-06-26 13:00:14,367 - INFO - conv_stripped_op.py:633 - No shifts available for layer stage2_eggplant_specialist/fc1/conv_op, using max shift instead. delta=0.1028
+2026-06-29 12:39:12,032 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
+2026-06-29 12:41:18,364 - INFO - __init__.py:28 - No GPU chosen and no suitable GPU found, falling back to CPU.
