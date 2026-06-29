@@ -162,3 +162,82 @@
 2026-06-29 12:42:57,901 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
 2026-06-29 12:43:07,598 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
 2026-06-29 12:43:16,091 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-06-29 14:03:36,860 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:03:36,942 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.08)
+2026-06-29 14:03:37,093 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.23)
+2026-06-29 14:03:37,889 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:03:37,890 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:03:38,354 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:01.49)
+2026-06-29 14:08:23,641 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:08:23,710 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.07)
+2026-06-29 14:08:23,818 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.18)
+2026-06-29 14:08:23,987 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:08:23,987 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:08:24,168 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.53)
+2026-06-29 14:08:24,764 - INFO - client_runner.py:501 - Loading model script commands to stage2_eggplant_specialist from /tmp/tmpswu856xj.alls
+2026-06-29 14:16:52,774 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:16:52,838 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.06)
+2026-06-29 14:16:52,946 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.17)
+2026-06-29 14:16:53,113 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:16:53,113 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:16:53,298 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.52)
+2026-06-29 14:20:40,351 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:20:40,415 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.06)
+2026-06-29 14:20:40,519 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.17)
+2026-06-29 14:20:40,692 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:20:40,692 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:20:40,875 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.52)
+2026-06-29 14:23:27,578 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:23:27,622 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.04)
+2026-06-29 14:23:27,727 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.15)
+2026-06-29 14:23:27,896 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:23:27,896 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:23:28,079 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.50)
+2026-06-29 14:23:28,656 - INFO - client_runner.py:501 - Loading model script commands to stage2_eggplant_specialist from /tmp/tmpsfakccyf.alls
+2026-06-29 14:27:20,511 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:27:20,554 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.04)
+2026-06-29 14:27:20,659 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.15)
+2026-06-29 14:27:20,826 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:27:20,826 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:27:21,011 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.50)
+2026-06-29 14:29:33,331 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:29:33,375 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.04)
+2026-06-29 14:29:33,480 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.15)
+2026-06-29 14:29:33,659 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:29:33,659 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:29:33,844 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.51)
+2026-06-29 14:29:34,418 - INFO - client_runner.py:501 - Loading model script commands to stage2_eggplant_specialist from /tmp/tmp9frx2h07.alls
+2026-06-29 14:33:24,048 - INFO - parser.py:158 - Translation started on ONNX model stage2_eggplant_specialist
+2026-06-29 14:33:24,093 - INFO - parser.py:193 - Restored ONNX model stage2_eggplant_specialist (completion time: 00:00:00.04)
+2026-06-29 14:33:24,198 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.15)
+2026-06-29 14:33:24,363 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_eggplant_specialist/input_layer1'.
+2026-06-29 14:33:24,363 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 14:33:24,546 - INFO - parser.py:288 - Translation completed on ONNX model stage2_eggplant_specialist (completion time: 00:00:00.50)
+2026-06-29 14:33:25,128 - INFO - client_runner.py:504 - Loading model script commands to stage2_eggplant_specialist from string
+2026-06-29 14:33:36,923 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-29 14:33:37,111 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-29 14:33:37,293 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-29 14:33:37,294 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-29 14:33:37,295 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-29 14:33:39,038 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-29 14:33:39,098 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-29 14:33:39,339 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.24)
+2026-06-29 14:33:39,422 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-29 14:33:39,629 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-29 14:33:39,634 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-29 14:33:51,901 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:12.27)
+2026-06-29 14:33:52,418 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-29 14:33:52,419 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-29 14:33:52,419 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-29 14:33:52,420 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-29 14:33:52,420 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-29 14:33:59,094 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-29 14:33:59,096 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-29 14:33:59,104 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-29 14:33:59,108 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-29 14:34:03,951 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-29 14:34:04,067 - INFO - quant_checker.py:171 - The calibration set seems to not be normalized, because the values range is [(0.0, 1.0), (0.003921569, 1.0), (0.0, 1.0)].
+Since the neural core works in 8-bit (between 0 to 255), a quantization will occur on the CPU of the runtime platform.
+Add a normalization layer to the model to offload the normalization to the neural core.
+Refer to the user guide Hailo Dataflow Compiler user guide / Model Optimization / Optimization Related Model Script Commands / model_modification_commands / normalization for details.
+2026-06-29 14:34:08,798 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
