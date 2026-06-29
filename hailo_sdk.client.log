@@ -316,3 +316,37 @@ Since the neural core works in 8-bit (between 0 to 255), a quantization will occ
 Add a normalization layer to the model to offload the normalization to the neural core.
 Refer to the user guide Hailo Dataflow Compiler user guide / Model Optimization / Optimization Related Model Script Commands / model_modification_commands / normalization for details.
 2026-06-29 15:27:50,124 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
+2026-06-29 17:44:55,386 - INFO - parser.py:158 - Translation started on ONNX model stage2_tomato_specialist
+2026-06-29 17:44:55,517 - INFO - parser.py:193 - Restored ONNX model stage2_tomato_specialist (completion time: 00:00:00.13)
+2026-06-29 17:44:55,759 - INFO - parser.py:216 - Extracted ONNXRuntime meta-data for Hailo model (completion time: 00:00:00.37)
+2026-06-29 17:44:56,354 - INFO - parser.py:366 - Start nodes mapped from original model: 'images': 'stage2_tomato_specialist/input_layer1'.
+2026-06-29 17:44:56,355 - INFO - parser.py:367 - End nodes mapped from original model: '/model.9/Softmax'.
+2026-06-29 17:44:56,900 - INFO - parser.py:288 - Translation completed on ONNX model stage2_tomato_specialist (completion time: 00:00:01.51)
+2026-06-29 17:44:59,255 - INFO - client_runner.py:504 - Loading model script commands to stage2_tomato_specialist from string
+2026-06-29 17:45:03,252 - INFO - calib_set_generator.py:130 - Found model with 3 input channels, using real RGB images for calibration instead of sampling random data.
+2026-06-29 17:45:03,919 - IMPORTANT - sdk_backend.py:1133 - Starting Model Optimization
+2026-06-29 17:45:04,334 - WARNING - mo_config.py:168 - Reducing optimization level to 0 (the accuracy won't be optimized and compression won't be used) because there's less data than the recommended amount (1024), and there's no available GPU
+2026-06-29 17:45:04,336 - WARNING - mo_config.py:233 - Running model optimization with zero level of optimization is not recommended for production use and might lead to suboptimal accuracy results
+2026-06-29 17:45:04,346 - INFO - mo_script_parser.py:91 - Model received quantization params from the hn
+2026-06-29 17:45:09,964 - INFO - algorithm_base.py:149 - MatmulDecompose skipped
+2026-06-29 17:45:10,144 - INFO - algorithm_base.py:152 - Starting Mixed Precision
+2026-06-29 17:45:10,750 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Mixed Precision is done (completion time is 00:00:00.60)
+2026-06-29 17:45:11,087 - INFO - algorithm_base.py:149 - LayerNorm Decomposition skipped
+2026-06-29 17:45:11,752 - INFO - algorithm_base.py:152 - Starting Statistics Collector
+2026-06-29 17:45:11,759 - INFO - stats_collection.py:89 - Using dataset with 64 entries for calibration
+2026-06-29 17:45:58,931 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Statistics Collector is done (completion time is 00:00:47.17)
+2026-06-29 17:46:01,418 - INFO - algorithm_base.py:152 - Starting Fix zp_comp Encoding
+2026-06-29 17:46:01,419 - INFO - algorithm_base.py:168 - Model Optimization Algorithm Fix zp_comp Encoding is done (completion time is 00:00:00.00)
+2026-06-29 17:46:01,422 - INFO - algorithm_base.py:149 - Matmul Equalization skipped
+2026-06-29 17:46:01,423 - INFO - algorithm_base.py:152 - Starting MatmulDecomposeFix
+2026-06-29 17:46:01,423 - INFO - algorithm_base.py:168 - Model Optimization Algorithm MatmulDecomposeFix is done (completion time is 00:00:00.00)
+2026-06-29 17:46:32,995 - INFO - algorithm_base.py:149 - Finetune encoding skipped
+2026-06-29 17:46:32,998 - INFO - algorithm_base.py:149 - Bias Correction skipped
+2026-06-29 17:46:33,010 - INFO - algorithm_base.py:149 - Adaround skipped
+2026-06-29 17:46:33,020 - INFO - algorithm_base.py:149 - Quantization-Aware Fine-Tuning skipped
+2026-06-29 17:46:51,174 - INFO - algorithm_base.py:149 - Layer Noise Analysis skipped
+2026-06-29 17:46:51,558 - INFO - quant_checker.py:171 - The calibration set seems to not be normalized, because the values range is [(0.0, 1.0), (0.0, 1.0), (0.0, 0.99607843)].
+Since the neural core works in 8-bit (between 0 to 255), a quantization will occur on the CPU of the runtime platform.
+Add a normalization layer to the model to offload the normalization to the neural core.
+Refer to the user guide Hailo Dataflow Compiler user guide / Model Optimization / Optimization Related Model Script Commands / model_modification_commands / normalization for details.
+2026-06-29 17:47:06,336 - IMPORTANT - sdk_backend.py:1145 - Model Optimization is done
